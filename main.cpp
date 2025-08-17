@@ -98,7 +98,7 @@ int main(int argc, char** argv) {
         namedWindow("catsTrack", WINDOW_NORMAL | WINDOW_GUI_EXPANDED);
         resizeWindow("catsTrack", static_cast<int>(combined_size.width / 1.5), static_cast<int>(combined_size.height / 1.5));
 
-        std::string ffmpeg_command = "ffmpeg_res -y "
+        std::string ffmpeg_command = "ffmpeg.exe -y "
             "-f rawvideo "
             "-pixel_format bgr24 "
             "-video_size " + std::to_string(combined_size.width) + "x" + std::to_string(combined_size.height) + " "
@@ -113,7 +113,7 @@ int main(int argc, char** argv) {
         FILE* ffmpeg_res = popen(ffmpeg_command.c_str(), "w");
         #endif
         if (!ffmpeg_res) {
-            std::cerr << "Failed to open ffmpeg_res process\n";
+            std::cerr << "Failed to open ffmpeg.exe process\n";
             return -1;
         }
 

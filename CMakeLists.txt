@@ -1,5 +1,5 @@
 ﻿cmake_minimum_required(VERSION 3.12)
-project(yolov11-tensorrt)
+project(cats-tracker)
 
 find_package(CUDA REQUIRED)
 
