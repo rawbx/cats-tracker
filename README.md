@@ -1,6 +1,8 @@
-<p align="center">
-  <video src='output.mp4' width=480/>
-</p>
+
+
+
+https://github.com/user-attachments/assets/6e099cbe-9965-4e54-8eb4-0edad18ad5d1
+
 
 It is modified by [yolov11-tensorrt](https://github.com/spacewalk01/yolov11-tensorrt), and i use this to track cats.
 
